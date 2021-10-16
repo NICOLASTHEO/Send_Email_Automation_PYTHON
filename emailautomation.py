@@ -4,12 +4,12 @@ from email.message import EmailMessage
 from password import senha
 
 # configurar email que enviará mensagem e senha
-EMAIL_ADRESS = 'theo.ng.araujo@gmail.com'
+EMAIL_ADRESS = 'seuemail@provedor.com'
 EMAIL_PASSWORD = senha
 
 msg = EmailMessage()
 msg['Subject'] = 'Automatizando envio de emails - Teste de Automação'
-msg['From'] = ' seuemail@provedor.com'
+msg['From'] = 'seuemail@provedor.com'
 msg['To'] = 'emailqvaireceber@gmail.com', 'outroemail@gmail.com', 'maisumemial@yahoo.com.br'
 
 msg.set_content(
